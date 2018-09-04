@@ -1,6 +1,6 @@
 {
   "name": "observalue",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "src/index.js",
   "author": "Alican Çubukçuoğlu <alicancubukcuoglu@gmail.com>",
   "license": "MIT",
@@ -14,6 +14,10 @@
     "test-ci": "run-s test test-ci:codecov",
     "test-ci:codecov": "codecov"
   },
+  "files": [
+    "src/**/*.js",
+    "!src/**/*.test.js"
+  ],
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
